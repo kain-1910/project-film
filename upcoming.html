@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-520/css/bootstrap.css">
+    <link rel="stylesheet" href="./style/css/reset.css">
+    <link rel="stylesheet" href="style/css/css__header_.css" />
+    <link rel="stylesheet" href="/style/css/css__footer.css" />
+    <link rel="stylesheet" href="./lib/gridsystem/grid.css">
+    <link rel="stylesheet" href="./style/css/base.css">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+    <script src="/lib/jquery/jquery-3.6.2.min.js"></script>
+    <script src="/lib/jquery/js.cookie.js"></script>
+    <script src="/style/js/main_js.js"></script>
+    <script src="./lib/bootstrap-520/js/bootstrap.js"></script>
+    <title>Document</title>
+</head>
+<body onclick="check_userusing()">
+    <div class="main">
+
+        <header style="background-color: #000000">
+            <div class="container" style="position: relative">
+              <div class="row">
+                <div class="logo_header col-sm-12 col-md-12 col-lg-6"></div>
+                <div class="searchform col-3 d-md-none d-none d-lg-block">
+                  <div class="con1 col-12">
+                    <div class="con col-12">
+                      <input
+                        placeholder="Tìm tên phim, diễn viên..."
+                        class="search-box form-control-sm"
+                        type="text"
+                        name="search"
+                      />
+                      <i class="ti-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="login-btn-header login-btn-user btn btn-outline-light d-none d-lg-block"
+                  onclick="golinks(`login_register.html`)"
+                >
+                  Đăng nhập
+                </div>
+              </div>
+            </div>
+          </header>
+          <nav style="width: 100%; background-color: #000000">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="menu-icon d-lg-none" onclick="menu(1,'auto',1,setmenu)">
+                  <i class="ti-menu" style="font-size: 2rem; color: #fff"></i>
+                </div>
+                <div
+                  class="login-btn-nav btn login-btn-user btn-outline-light d-lg-none"
+                  onclick="golinks(`login_register.html`)"
+                >
+                  Đăng nhập
+                </div>
+                <div
+                  class="btn btn-outline-secondary btn-link-nav col-2_4 d-lg-block d-none"
+                >
+                  Phim
+                </div>
+                <div
+                  class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+                >
+                  Mua vé
+                </div>
+                <div
+                  class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+                >
+                  News
+                </div>
+                <div
+                  class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+                >
+                  Khuyến mãi
+                </div>
+                <div
+                  class="btn btn-outline-secondary btn-link-nav col-2_4 d-none d-lg-block"
+                >
+                  Promotion
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="container menu-list-md_sm"
+            style="height: 0; opacity: 0; background-color: #fff"
+          >
+            <div class="sm-menu col-12" style="padding: 15px">
+              <i class="ti-close menu-icon-close" onclick="menu(0,0,0,setmenu)"></i>
+              <div class="con search-box-menu">
+                <input
+                  placeholder="Tìm tên phim, diễn viên..."
+                  class="search-box form-control-sm"
+                  type="text"
+                  name="search"
+                />
+                <i class="ti-search"></i>
+              </div>
+              <a href="" class="links-menu"> Phim </a>
+              <a href="" class="links-menu"> Mua vé </a>
+              <a href="" class="links-menu"> News </a>
+              <a href="" class="links-menu"> Khuyến mãi </a>
+              <a href="" class="links-menu"> Promotion </a>
+            </div>
+          </div>
+
+        <div class="main__container">
+            <div class="grid wide">
+                <div class="col l-12 m-grid-12 c-12">
+                    <div class="main__content">
+                        <div class="main__body">
+                            <div class="heading">
+                                <div class="heading__title non-active">
+                                    <a href="./playingmovie.html" class=" heading__title-link">Phim đang chiếu</a>
+                                </div>
+    
+                                <div class="heading__title active">
+                                    <a href="" class="heading__title-link">Phim sắp chiếu</a>
+                                </div>
+                            </div>
+    
+                            <div class="list__content">
+                                <div class=" list__film row">
+                                    <div class="col l-4 m-grid-6 c-6 film__item">
+                                        <div class="film__action">
+                                            
+                                            <img src="./resouces/img/blac-adam.jpg" alt="Anh" class="film__img">
+                                            
+                                            <a href="" class="film__booking">
+                                                <div class="film__content">
+                                                    <div class="view-location">
+                                                        C19
+                                                    </div>
+    
+                                                    <a href="" class="booking-btn">
+                                                        Mua vé
+                                                    </a>
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        
+    
+                                        <div class="film__info">
+                                            <h3 class="name-eng">Black Adam</h3>
+                                            <h3 class="name-vn">Black Adam</h3>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 m-grid-6 c-6 film__item">
+                                        <div class="film__action">
+                                            
+                                            <img src="./resouces/img/black-panther.jpg" alt="Anh" class="film__img">
+                                            
+                                            <a href="" class="film__booking">
+                                                <div class="film__content">
+                                                    <div class="view-location">
+                                                        C19
+                                                    </div>
+    
+                                                    <a href="" class="booking-btn">
+                                                        Mua vé
+                                                    </a>
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        
+                                        <div class="film__info">
+                                            <h3 class="name-eng">Black Panther: Wakanda Forever</h3>
+                                            <h3 class="name-vn">Chiến Binh Báo Đen: Wakanda Bất Diệt</h3>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 m-grid-6 c-6 film__item">
+                                        <div class="film__action">
+                                            
+                                            <img src="./resouces/img/cat.jpg" alt="Anh" class="film__img">
+                                            
+                                            <a href="" class="film__booking">
+                                                <div class="film__content">
+                                                    <div class="view-location">
+                                                        C19
+                                                    </div>
+    
+                                                    <a href="" class="booking-btn">
+                                                        Mua vé
+                                                    </a>
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        
+    
+                                        <div class="film__info">
+                                            <h3 class="name-eng">Puss In Boots: The Last Wish</h3>
+                                            <h3 class="name-vn">Mèo Đi Hia 2</h3>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 m-grid-6 c-6 film__item">
+                                        <div class="film__action">
+                                            
+                                            <img src="./resouces/img/nix.jpg" alt="Anh" class="film__img">
+                                            
+                                            <a href="" class="film__booking">
+                                                <div class="film__content">
+                                                    <div class="view-location">
+                                                        C19
+                                                    </div>
+    
+                                                    <a href="" class="booking-btn">
+                                                        Mua vé
+                                                    </a>
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        
+    
+                                        <div class="film__info">
+                                            <h3 class="name-eng">Nix</h3>
+                                            <h3 class="name-vn">Ác Quái</h3>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 m-grid-6 c-6 film__item">
+                                        <div class="film__action">
+                                            
+                                            <img src="./resouces/img/shazam.jpg" alt="Anh" class="film__img">
+                                            
+                                            <a href="" class="film__booking">
+                                                <div class="film__content">
+                                                    <div class="view-location">
+                                                        C19
+                                                    </div>
+    
+                                                    <a href="" class="booking-btn">
+                                                        Mua vé
+                                                    </a>
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        
+    
+                                        <div class="film__info">
+                                            <h3 class="name-eng">Shazam! Fury Of The Gods</h3>
+                                            <h3 class="name-vn">Shazam! Cơn Thịnh Nộ Của Các Vị Thần</h3>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 m-grid-6 c-6 film__item">
+                                        <div class="film__action">
+                                            
+                                            <img src="./resouces/img/ultraman.jpg" alt="Anh" class="film__img">
+                                            
+                                            <a href="" class="film__booking">
+                                                <div class="film__content">
+                                                    <div class="view-location">
+                                                        C19
+                                                    </div>
+    
+                                                    <a href="" class="booking-btn">
+                                                        Mua vé
+                                                    </a>
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        
+    
+                                        <div class="film__info">
+                                            <h3 class="name-eng">Shin Ultraman</h3>
+                                            <h3 class="name-vn">Shin Ultraman</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="film__introduce">
+                            <h2 class="heading__introduce">Space Cinema</h2>
+    
+                            <div class="introduce__desc">
+                                <p class="description">
+                                    Cùng <b>Space Cinema</b> chào tháng mới với những tựa phim hay nhất sắp được ra mắt. Tiếp tục đem đến trải nghiệm Phim Như Sống, Sống Như Phim dành cho các “mọt phim”, số lượng tác phẩm trong tháng 08 gần như sẽ trải dài với đủ các thể loại. <br><br> Những ai là fan trung thành của điện ảnh nước nhà, hãy chuẩn bị tinh thần khi những cái tên ra rạp lần này đều mang phong cách có phần ma quái, rùng rợn. Bên cạnh đó, chủ nhân tượng vàng Oscar – Brad Pitt cũng góp mặt trong siêu phẩm hành động hứa hẹn náo loạn phòng vé. Chuyến phiêu lưu của khỉ con Son Goku từng làm say đắm trái tim của biết bao thế hệ chính thức trở lại, đánh dấu cuộc chiến mới hoành tráng hơn. <br><br> Hãy cùng điểm danh những bộ phim hấp dẫn dự kiến công chiếu:
+                                </p>
+    
+                                <p class="description">
+                                    <a href="" class="name__film">Shin Ultraman</a> <br><br>
+                                    Shin Ultraman lại một lần nữa bay đến, mang theo giấc mơ chính nghĩa đầy hấp dẫn giữa hiện thực cuộc sống khắc nghiệt. Chính vì thế, đây sẽ là tác phẩm không thể bỏ qua với các fan của Ultraman và cả những khán giả nhí - thế hệ sẽ nối tiếp tinh thần đầy anh dũng, kiên cường này. <br>Phim mới <a href="" class="name__film">Shin Ultraman</a> ra mắt tại các rạp chiếu phim từ 30.09.2022.
+                                </p>
+    
+                                <p class="description">
+                                    <a href="" class="name__film">Shazam! Fury Of The Gods</a> <br><br>
+                                    Trong lần trở lại này, cậu chàng Shazam vẫn trăn trở cho rằng mình “không xứng đáng với năng lực này”. Thế giới có The Flash nhanh như chớp với bộ suit đỏ đặc trưng, Aquaman to cao lực lưỡng và cả Batman siêu ngầu. Trong khi đó, Shazam vẫn chỉ là Shazam chẳng có năng lực gì khác biệt… hoặc là Billy Batson, một cậu nhóc trung học trong thân hình một siêu anh hùng cao to già đời, không thể kiểm soát sức mạnh của mình. Nếu như các siêu anh hùng khác khiến khán giả không khỏi trầm trồ vì những năng lực siêu phàm có thể cứu thế giới thì “cậu nhóc” Shazam, mỗi khi dùng siêu năng lực vẫn hậu đậu như một “chú hề” lừng danh khiến người xem phải bật cười. <br> Phim mới <a href="" class="name__film">Shazam! Fury Of The Gods</a> ra mắt tại các rạp chiếu phim từ 06.2023.
+                                </p>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer"></footer>
+    </div>
+
+    
+</body>
+</html>
